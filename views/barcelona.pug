@@ -1,0 +1,12 @@
+extends layout
+
+block layout-content
+    div.View.UserView
+        h1.Banner Hello, #{barcaFan.first_name}!
+        div.Message
+            div.Title
+                h1 wellcom to f.c barcelona!
+            //- pre.Details=JSON.stringify(userProfile, null, 2)
+        div.NavButtons
+            a(href="/logout")
+                div.NavButton Log out
